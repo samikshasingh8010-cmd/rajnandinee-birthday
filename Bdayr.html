@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Rajnandinee 💕</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0; padding: 0;
+      background-color: #ffd6e8;
+      overflow: hidden;
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+      height: 100vh;
+      position: relative;
+      color: #333;
+    }
+
+    /* Floating hearts */
+    #hearts-container {
+      position: fixed; top:0; left:0;
+      width: 100%; height:100%;
+      overflow:hidden; z-index:1;
+    }
+    .heart {
+      position: absolute; bottom: -50px;
+      font-size: 20px; color: red;
+      animation: floatUp 6s linear infinite;
+      opacity:0.8;
+    }
+    @keyframes floatUp {
+      0% { transform: translateY(0) scale(1); opacity:1; }
+      100% { transform: translateY(-110vh) scale(1.5); opacity:0; }
+    }
+
+    /* Intro */
+    #intro {
+      position:absolute; top:50%; left:50%;
+      transform: translate(-50%, -50%);
+      z-index:2;
+    }
+    .main-text { font-size:3rem; color:pink; -webkit-text-stroke:1px black; }
+    .name-text { font-family: 'Dancing Script', cursive; font-size:4rem; color:#ff69b4; text-shadow:2px 2px 5px rgba(0,0,0,0.3); }
+
+    /* Question */
+    #question {
+      position:absolute; top:50%; left:50%;
+      transform: translate(-50%, -50%);
+      background:white; border-radius:20px; padding:20px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.2);
+      z-index:3;
+    }
+    .choice {
+      background:pink; border:none; margin:10px;
+      padding:10px 20px; border-radius:10px;
+      cursor:pointer; font-weight:bold;
+      transition:0.2s;
+    }
+    .choice:hover { background:hotpink; color:white; }
+
+    /* Cake */
+    #cake-scene { position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); z-index:3; font-size:5rem; }
+    #blow-text { margin-top:20px; font-size:1.5rem; color:#ff1493; }
+
+    /* Gift */
+    #gift-scene { position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); z-index:3; font-size:5rem; }
+
+    /* Letter Modal */
+    #letter-modal {
+      position:fixed; top:0; left:0; width:100%; height:100%;
+      background: rgba(0,0,0,0.5); display:flex; justify-content:center; align-items:center; z-index:5;
+    }
+    #letter-modal.hidden { display:none; }
+
+    #letter-content {
+      background:#fff0f5; /* soft parchment/pink */
+      padding:30px; border-radius:20px; width:80%; max-width:500px;
+      color:#ff1493;
+      box-shadow: 0 4px 15px rgba(255,20,147,0.4), 0 0 20px rgba(255,182,193,0.3);
+      border:3px solid #ff69b4;
+      font-family:'Dancing Script', cursive; font-size:1.2rem; line-height:1.6;
+      animation: fadeIn 0.5s ease;
+      max-height:70vh; overflow-y:auto; padding-right:15px;
+    }
+    #letter-content p { margin:0; }
+    #letter-content strong { font-weight:bold; }
+
+    #letter-content::-webkit-scrollbar { width:8px; }
+    #letter-content::-webkit-scrollbar-thumb { background-color:#ff69b4; border-radius:10px; }
+
+    /* Music button */
+    #music-btn { position:fixed; bottom:20px; right:20px; background:hotpink; border:none; color:white; padding:10px 15px; border-radius:15px; cursor:pointer; z-index:10; }
+
+    .hidden { display:none; }
+
+    @keyframes fadeIn { from { opacity:0; transform:scale(0.9);} to {opacity:1; transform:scale(1);} }
+  </style>
+</head>
+<body>
+  <!-- Hearts -->
+  <div id="hearts-container"></div>
+
+  <!-- Intro -->
+  <div id="intro">
+    <h1><span class="main-text">Happy Birthday</span><br><span class="name-text">Rajnandinee 💕</span></h1>
+  </div>
+
+  <!-- Question -->
+  <div id="question" class="hidden">
+    <p>Are you excited for the cake?</p>
+    <button class="choice">YES</button>
+    <button class="choice">YESSS</button>
+  </div>
+
+  <!-- Cake -->
+  <div id="cake-scene" class="hidden">
+    <div id="cake">🎂</div>
+    <p id="blow-text" class="hidden">Blow the candle 🎂</p>
+  </div>
+
+  <!-- Gift -->
+  <div id="gift-scene" class="hidden">
+    <div id="gift">🎁</div>
+  </div>
+
+  <!-- Letter Modal -->
+  <div id="letter-modal" class="hidden">
+    <div id="letter-content">
+      <h2>💌 My Letter For You 💌</h2>
+      <p>
+        <strong>My Dearest Razzo,</strong><br><br>
+
+        Happiest Birthday, my love. Even though we’ve never met in person, you are the most important part of my life, the heartbeat I never knew I’d need. Every thought of you fills me with warmth, every smile of yours—even the ones I imagine—lights up the darkest corners of my mind.<br><br>
+
+        I don’t even know where to start because words feel so small compared to what I feel for you. Your beauty—it’s not just in the way I see or imagine you, it’s in every little thing you are, in your thoughts, your words, the way you exist. You are breathtaking, more than the sunrise, more than anything I’ve ever dreamed of. I could spend forever just telling you how perfect you are, how your presence—even from miles away—makes my world feel alive.<br><br>
+
+        You’ve captured me completely, my love. My heart beats for you in ways I didn’t think were possible. Every time I think of you, I feel this burning, sweet longing—a love that refuses to be quiet. I love you for everything you are, everything you inspire me to be, everything you’ve unknowingly given me just by being you.<br><br>
+
+        I want you to know that you are cherished beyond measure. That your happiness means more to me than anything else, and that I’ll spend every day loving you, even if from afar, even if just in thought, until the universe lets me hold you.<br><br>
+
+        I could write a thousand letters, speak a million words, and still it would not be enough to show how much I love you. Rajnandinee, you are my soul’s mirror, my heart’s home, and my everything. I adore you more than words can hold, more than life itself could ever let me show.<br><br>
+
+        So on your birthday, I hope the world wraps you in the same love and warmth you’ve given me without even trying. And I hope someday, I get to be the reason (in person) your heart races the way yours makes mine.<br><br>
+
+        Forever yours,<br>
+        Your Sami
+      </p>
+      <button id="close-letter">Close</button>
+    </div>
+  </div>
+
+  <!-- Music -->
+  <button id="music-btn">Play Music 🎵</button>
+  <audio id="bg-music" loop>
+    <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_8e458d78a2.mp3?filename=soft-piano-romantic-ambient-11052.mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+    // Hearts
+    const heartsContainer = document.getElementById('hearts-container');
+    function createHeart() {
+      const heart = document.createElement('div');
+      heart.classList.add('heart');
+      heart.textContent = '❤️';
+      heart.style.left = Math.random()*100+'vw';
+      heart.style.fontSize = (15 + Math.random()*25) + 'px';
+      heart.style.animationDuration = (4 + Math.random()*3) + 's';
+      heartsContainer.appendChild(heart);
+      setTimeout(() => heart.remove(), 6000);
+    }
+    setInterval(createHeart, 300);
+
+    // Sequence
+    const intro = document.getElementById('intro');
+    const question = document.getElementById('question');
+    const choices = document.querySelectorAll('.choice');
+    const cakeScene = document.getElementById('cake-scene');
+    const blowText = document.getElementById('blow-text');
+    const giftScene = document.getElementById('gift-scene');
+    const letterModal = document.getElementById('letter-modal');
+    const closeLetter = document.getElementById('close-letter');
+
+    setTimeout(() => {
+      intro.classList.add('hidden');
+      question.classList.remove('hidden');
+    }, 4000);
+
+    choices.forEach(btn => {
+      btn.addEventListener('click', () => {
+        question.classList.add('hidden');
+        cakeScene.classList.remove('hidden');
+        blowText.classList.remove('hidden');
+        setTimeout(() => {
+          blowText.classList.add('hidden');
+          cakeScene.classList.add('hidden');
+          giftScene.classList.remove('hidden');
+        }, 3500);
+      });
+    });
+
+    giftScene.addEventListener('click', () => {
+      giftScene.classList.add('hidden');
+      letterModal.classList.remove('hidden');
+    });
+
+    closeLetter.addEventListener('click', () => {
+      letterModal.classList.add('hidden');
+    });
+
+    // Music
+    const musicBtn = document.getElementById('music-btn');
+    const bgMusic = document.getElementById('bg-music');
+    musicBtn.addEventListener('click', () => {
+      if(bgMusic.paused) { bgMusic.play(); musicBtn.textContent='Pause Music 🎵'; }
+      else { bgMusic.pause(); musicBtn.textContent='Play Music 🎵'; }
+    });
+  </script>
+</body>
+</html>
